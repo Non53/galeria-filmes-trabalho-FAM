@@ -1,24 +1,115 @@
-.navbar{
-    display: flex;
-    justify-content: flex-start;
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
-span {
-    padding-left: 15%;
+:root {
+  --primary: #780000;
+  --secondary: #c1121f;
+  --tertiary: #669bbc;
+  --quaternary: #fdf0d5;
+  --darken: #02020265;
+  --lighten: #f0f0f0;
+}
+header {
+  position: relative;
+
+}
+
+#painel_home {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)),
+    url("https://images2.alphacoders.com/971/971275.jpg");
+  height: 70dvh;
+  background-repeat: no-repeat;
+  background-size: cover;;
+}
+
+.navbar {
+  display: flex;
+  background-color: var(--darken);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgba(104, 104, 104, 0.466);
+      height: 75px;
+}
+
+.logo{
+    background-color: var(--secondary);
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    border: 2px dashed var(--quaternary);
+}
+
+.logo a{
+
+    color: var(--lighten);
+    pad: 4px;
+
+
+}
+.logo strong {
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  max-width: 590px;
+  list-style: none;
+  text-decoration: none;
+  height: 60px;
   
 }
-.catalogo{
-   padding: 10%;
+.nav-list a {
+  text-decoration: none;
+  color: var(--lighten);
+}
+.nav-list li:hover {
+  text-decoration: none;
+  border-bottom: 3px solid var(--primary);
+}
+.nav-list li {
+  text-decoration: none;
+ 
+ padding: 1rem;
+}
+.about-us {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+border: 1px solid var(--lighten);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.about-us a {
+  text-decoration: none;
+  color: var(--lighten);
+}
+span {
+  padding-left: 15%;
+}
+.catalogo {
+  padding: 10%;
 }
 
 .beleza {
-    background-color: red;
 }
-body{
-    background-color: green;
+body {
+  background-color: #020202;
 }
-.organizar_card{
-    display: flex;
-    justify-content: space-between;
+.organizar_card {
+  display: flex;
+  justify-content: space-between;
 }
 .carrosel {
   width: 36rem;
